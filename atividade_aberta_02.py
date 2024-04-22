@@ -21,8 +21,6 @@ else:
     print("Aluno repovado com média %.2f" % media)
 
 print(notas)
-print(media)
-
 
 # 2) Crie um programa de repetição que receba uma matriz de tamanho 5x5 e imprima a
 # soma de cada linha
@@ -30,9 +28,24 @@ print(media)
 import numpy as np
 matriz = [[1,2,3,4,5], [1,2,3,4,5], [1,2,3,4,5], [1,2,3,4,5], [1,2,3,4,5]]
 
-for linha in range(0,5): # linha = 0,1
+for linha in range(0,5): # linha = 0
     soma = 0
-for coluna in range(0,5): # coluna = 0,1,2
+for coluna in range(0,5): # coluna = 0,1,2,3,4
     soma = soma + matriz[linha][coluna]
 print(soma)
 
+import numpy as np
+matriz = np.empty((5,5))
+
+# leitura da matriz
+for i in range(0,5):
+    for j in range(0,5):
+        num = float(input("Digite o elemento da linha %d, coluna %d: " %(i+1,j+1)))
+        matriz[i][j] = num
+
+# calcular soma das linhas
+for i in range(0,5):
+    soma = 0
+    for j in range(0,5):
+        soma = soma + matriz[i][j]
+    print(soma)
