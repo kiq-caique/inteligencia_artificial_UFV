@@ -49,3 +49,47 @@ for i in range(0,5):
     for j in range(0,5):
         soma = soma + matriz[i][j]
     print(soma)
+
+
+# 3) Crie uma função que receba dois inteiros ent1 e ent2 . Essa função deve imprimir todos os textos quando a condição for atendida:
+# “ent1 - ent2 é negativo”, condição: caso ent1 menos ent2 seja menor que zero,
+# “ent1 * ent2 é negativo”, condição: caso ent1 multiplicado por ent2 seja menor que zero,
+# “ent1 + ent2 é negativo”, condição: caso ent1 somado a ent2 seja menor que zero.
+
+def questao3(ent1,ent2): #10,1
+  if ent1 - ent2 <0:
+    print("ent1 - ent2 é negativo")
+  if ent1 * ent2 <0:
+    print("ent1 * ent2 é negativo")
+  if ent1 + ent2 <0:
+    print("ent1 + ent2 é negativo")
+
+#testa en1 - ent2 menor que zero, outras duas opções positivo
+a= 1
+b= 2
+print("\nteste 1 (%d, %d):" %(a,b))
+questao3(a,b)
+
+#testa ent1 * ent2 negativo, outras duas opções positivo
+a= 10
+b = -1
+print("\nteste 2 (%d, %d):" %(a,b))
+questao3(a,b)
+
+#testa ent1 + ent2 negativo, outras duas opções positivo
+a= -1
+b = -2
+print("\nteste 3 (%d, %d):" %(a,b))
+questao3(a,b)
+
+#testa todas opções negativas
+a= -10
+b=1
+print("\nteste 4 (%d, %d):" %(a,b))
+questao3(a,b)
+
+#testa todas opções positivas
+a= 10
+b = 1
+print("\nteste 5 (%d, %d):" %(a,b))
+questao3(a,b)
