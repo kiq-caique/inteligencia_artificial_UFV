@@ -95,3 +95,20 @@ print("\nteste 5 (%d, %d):" %(a,b))
 questao3(a,b)
 
 # 4) Crie uma função que receba um caractere, um string e o tamanho do string. Essa função deve substituir os caracteres de índice par do string pelo caractere informado como parâmetro de entrada e retornar o novo string gerado.
+
+def substituir_caracteres(caractere, string, tamanho):
+    novo_string = ''
+    for i in range(tamanho):
+        if i % 2 == 0:
+            novo_string += caractere
+        else:
+            novo_string += string[i]
+    return novo_string
+
+# Exemplo de uso:
+caractere = 'X'
+string = 'abcdefghij'
+tamanho = len(string)
+
+novo_string = substituir_caracteres(caractere, string, tamanho)
+print(novo_string)
