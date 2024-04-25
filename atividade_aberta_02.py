@@ -94,4 +94,4 @@ b = 1
 print("\nteste 5 (%d, %d):" %(a,b))
 questao3(a,b)
 
-4) Crie uma função que receba um caractere, um string e o tamanho do string. Essa função deve substituir os caracteres de índice par do string pelo caractere informado como parâmetro de entrada e retornar o novo string gerado.
+# 4) Crie uma função que receba um caractere, um string e o tamanho do string. Essa função deve substituir os caracteres de índice par do string pelo caractere informado como parâmetro de entrada e retornar o novo string gerado.
